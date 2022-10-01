@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Button } from 'react-bootstrap';
+import { Button, Spinner } from 'react-bootstrap';
+import GridCard from './components/GridCard/GridCard';
 
 function App() {
   return (
     <div className="App">
-      <Button variant='success'>React-Bootstrap Button</Button>
+      <Button variant="success">React-Bootstrap Button</Button>
+      <Spinner animation="grow" variant="danger" />
+
+      <GridCard></GridCard>
     </div>
   );
 }
